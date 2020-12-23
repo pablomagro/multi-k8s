@@ -10,11 +10,11 @@ spec:
   commonName: multi-k8s.ddns.net
   dnsNames:
     - multi-k8s.ddns.net
-    - www.multi-k8s.ddns.net
+    # - www.multi-k8s.ddns.net
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
           - multi-k8s.ddns.net
-          - www.multi-k8s.ddns.net
+          # - www.multi-k8s.ddns.net
