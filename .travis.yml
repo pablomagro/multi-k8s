@@ -28,7 +28,7 @@ script:
 
 deploy:
   provider: script
-  script: bahs ./deploy.sh
+  script: bash ./deploy.sh
   on:
     branch: master
 #   region: 'us-east-1'
