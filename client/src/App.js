@@ -17,7 +17,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Fib Calculator version KUBERNETES!
+            Fib Calculator version KUBERNETES!YES.===.SI! :)(:
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
