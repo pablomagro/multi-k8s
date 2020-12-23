@@ -1,0 +1,20 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Cluster
+metadata:
+  name: multi-k8s-ddns-net-tls
+spec:
+  secretName: multi-k8s-ddns-net
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: multi-k8s.ddns.net
+  dnsNames:
+    - multi-k8s.ddns.net
+    - www.multi-k8s.ddns.net
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - multi-k8s.ddns.net
+          - www.multi-k8s.ddns.net
